@@ -4,11 +4,37 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Changes from benedict</title>
+ <title>Task1</title>
+ <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+ <form action="" onsubmit="return valid()">
+  <div class="conn">
 
+   <label class="label" for="fullname">Fullname</label>
+   <input type="text" name="fullname" id="fullname" required="">
+   <label class="label" for="email">Email</label>
+   <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+    class="text-center input" required="">
+   <label class="label" for="number">Phone Number</label>
+   <input type="tel" name="number" id="number" pattern="[0-9]{11}" required="">
+   <div style="display: flex; justify-content: center; align-items: center; width: 500px; height: 50px;">
+    <label class="con" for="Male">Male</label>
+    <input type="radio" name="sex" id="male" value="male" required="" class="gender">
+    <label class="con" for="Female">Female</label>
+    <input type="radio" name="sex" id="female" value="female" required="" class="gender">
+
+   </div>
+
+   <input type="submit" value="Submit" class="submit">
+
+  </div>
+ </form>
+ <script type="module">
+  import { valid } from "./index.js"
+  window.valid = valid;
+ </script>
 </body>
 
 </html>

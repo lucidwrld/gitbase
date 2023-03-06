@@ -1,0 +1,64 @@
+form {
+ height: 98%;
+ width: 98%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+body {
+ background-image: url(kaleb-tapp-J59wWPn09BE-unsplash.jpg);
+ background-size: cover;
+ color: white;
+}
+
+.conn {
+
+ width: 510px;
+ height: 450px;
+ display: flex;
+ flex-direction: column;
+ background-color: rgba(255, 254, 254, 0.13);
+ border-radius: 10px;
+}
+
+.label {
+ margin-top: 20px;
+ margin-left: 1%;
+}
+
+input {
+ height: 40px;
+ width: 500px;
+ margin-top: 20px;
+ border: 1px solid rgb(80, 80, 80);
+ margin-left: 1%;
+
+ border-radius: 10px;
+}
+
+input:focus,
+input:active {
+ border-color: transparent;
+ outline: none;
+}
+
+.submit {
+ width: 200px;
+ margin-left: 30%;
+ border: 0;
+ border-radius: 10px;
+ background-color: grey;
+ font-weight: 900;
+}
+
+.submit:hover {
+ background-color: rgb(7, 75, 7);
+ color: white;
+}
+
+.gender {
+ width: 20px;
+ height: 20px;
+ margin-top: 0px;
+}
